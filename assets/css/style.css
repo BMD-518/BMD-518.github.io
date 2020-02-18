@@ -33,7 +33,12 @@ main {
 
 #userPhoto {
   width: 100%;
+  height: 100%;
   border: #d54036 2px solid;
+}
+
+.user-view {
+  background-color: #080703;
 }
 
 .clip-text {
