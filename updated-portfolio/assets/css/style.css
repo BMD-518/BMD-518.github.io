@@ -1,0 +1,250 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #080703;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+#navbar {
+  background-color: #080703;
+  border-bottom: #d54036 2px solid;
+}
+
+#navbarName {
+  font-family: 'Monoton', cursive;
+}
+
+.sidenav {
+  /* background-color: #D54036; */
+  background: url(https://media.giphy.com/media/3oKIPrhSx51K4Hv0ME/giphy.gif);
+  background-size: cover;
+  background-position: center;
+  border-right: #d54036 2px solid;
+}
+
+.sideNavBG {
+  background-color: #080703;
+  border: #d54036 2px solid;
+}
+
+#userPhoto {
+  width: 100%;
+  border: #d54036 2px solid;
+}
+
+.clip-text {
+  pointer-events: none;
+  background: url(https://media.giphy.com/media/3oKIPrhSx51K4Hv0ME/giphy.gif);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  color: transparent;
+  writing-mode: vertical-rl;
+  width: inherit;
+  height: inherit;
+  margin-top: 8%;
+  box-sizing: border-box;
+  font-weight: bold;
+  line-height: 100px;
+  flex-shrink: 1;
+  animation: fadeOut 12s;
+}
+
+.parallax-img {
+  width: 100%;
+  /* animation: fadeOut 3s; */
+}
+
+#parallax-content {
+  background: #080703;
+  background: -moz-linear-gradient(top, #080703 0%, #000000 51%, #060a0b 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #080703 0%,
+    #000000 51%,
+    #060a0b 100%
+  );
+  background: linear-gradient(to bottom, #080703 0%, #000000 51%, #060a0b 100%);
+  border-bottom: #d54036 2px solid;
+}
+
+/* TESTING ZONE ****************************************************** */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+/* vv MERN Image ID's vv */
+#mongo-img {
+  height: 100%;
+  width: auto;
+  /* max-width: 110px;
+  margin-top: 6%; */
+}
+#express-img {
+  height: 75%;
+  width: auto;
+  /* max-width: 300px; */
+  margin-top: 11%;
+}
+#react-img {
+  height: 100%;
+  width: auto;
+  /* max-width: 400px;
+  margin: auto; */
+}
+#node-img {
+  height: 100%;
+  width: auto;
+  /* max-width: 300px; */
+}
+/* ^^ Mern Image ID's ^^ */
+
+.flip-card {
+  align-content: space-between;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  display: inline-flexbox;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back.mongodb {
+  border-radius: 15px;
+  background-color: transparent;
+  color: white;
+  border: #13aa52 5px solid;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back.express {
+  border-radius: 15px;
+  background-color: transparent;
+  color: white;
+  border: #c77c71 5px solid;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back.react {
+  border-radius: 15px;
+  background-color: transparent;
+  color: white;
+  border: #61dbfc 5px solid;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back.node {
+  border-radius: 15px;
+  background-color: transparent;
+  color: white;
+  border: #539e43 5px solid;
+  transform: rotateY(180deg);
+}
+/* END TESTING ZONE ****************************************************** */
+
+.parallax-container {
+  height: 600px;
+}
+
+.carousel {
+  animation: fadeOut 5s;
+  height: 600px;
+}
+
+.carousel-item {
+  border-radius: 10px !important;
+  margin-top: -160px;
+  min-width: 600px;
+  margin-right: 20%;
+}
+
+#footer {
+  background-color: #080703;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h2 {
+  animation: fadeOut 1s;
+}
+
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  body {
+    min-width: 100%;
+  }
+
+  #navbarName {
+    font-size: 18px;
+  }
+
+  .carousel-item {
+    margin-top: -180px;
+    min-width: 300px;
+  }
+
+  .parallax-container {
+    height: 400px;
+  }
+
+  .flip-card {
+    width: 100% !important;
+  }
+
+  #carousel-container {
+    height: 475px;
+  }
+
+  #mongo-img {
+    height: 100%;
+  }
+  #express-img {
+    height: 75%;
+    margin-top: 11%;
+  }
+  #react-img {
+    height: 100%;
+  }
+  #node-img {
+    height: 100%;
+  }
+} */
