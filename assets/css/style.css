@@ -27,13 +27,13 @@ main {
 }
 
 .sideNavBG {
-  background-color: #080703;
+  background-color: #080703 !important;
   border: #d54036 2px solid;
 }
 
 #userPhoto {
   width: 100%;
-  height: 100% !important;
+  height: auto !important;
   border: #d54036 2px solid;
 }
 
