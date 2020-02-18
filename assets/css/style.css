@@ -39,6 +39,7 @@ main {
 
 .user-view {
   background-color: #080703;
+  border-bottom: #d54036 2px solid;
 }
 
 .clip-text {
